@@ -14,6 +14,11 @@ public class Utente {
         contatoreUtente++;
     }
 
+    // getter nome:
+    public String getNome() {
+        return nome;
+    }
+
     // Metodo prendi in prestito:
     public void prendiInPrestito(Risorsa r) {
         prestiti.add(r);

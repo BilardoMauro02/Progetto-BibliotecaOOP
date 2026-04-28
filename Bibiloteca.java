@@ -11,6 +11,16 @@ public class Bibiloteca {
         this.utenti = new ArrayList<>();
     }
 
+    // getter risore e utenti:
+    public ArrayList<Risorsa> getRisorse() {
+        return risorse;
+    }
+
+    public ArrayList<Utente> getUtenti() {
+        return utenti;
+    }
+
+    // Metodi:
     public void aggiungiRisorsa(Risorsa r) {
         risorse.add(r);
     }
