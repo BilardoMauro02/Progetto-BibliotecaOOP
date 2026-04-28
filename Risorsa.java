@@ -2,8 +2,6 @@ public abstract class Risorsa {
     private String titolo;
     private int annoPubblicazione;
     private String codice;
-    private static int contatoreCodice = 1;
-
 
     // Costruttore:
     public Risorsa(String titolo, int annoPubblicazione, String codice) {
@@ -26,11 +24,5 @@ public abstract class Risorsa {
     }
 
     // Classe astratta che implementeranno le sottoclassi: Libro, Rivista, Ebook:
-    public abstract String visualizzaDettagli();
-
-    // Override del metodo ereditato dalla superclasse generica Object:
-    @Override
-    public String toString() {
-        return visualizzaDettagli();
-    }
+    public abstract void visualizzaDettagli();
 }
