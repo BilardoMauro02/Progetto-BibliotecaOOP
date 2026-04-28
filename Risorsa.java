@@ -2,8 +2,6 @@ public abstract class Risorsa {
     private String titolo;
     private int annoPubblicazione;
     private String codice;
-    private static int contatoreCodice = 1;
-
 
     // Costruttore:
     public Risorsa(String titolo, int annoPubblicazione, String codice) {
