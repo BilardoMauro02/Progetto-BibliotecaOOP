@@ -24,7 +24,7 @@ public class Main {
 
             System.out.print("Scelta: ");
             int scelta = scanner.nextInt();
-            scanner.nextLine(); // pulizia buffer
+            scanner.nextLine();             //pulizia buffer
 
             switch (scelta) {
 
