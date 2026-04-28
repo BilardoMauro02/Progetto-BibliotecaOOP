@@ -23,8 +23,10 @@ public abstract class Risorsa {
         return codice;
     }
 
+    // Classe astratta che implementeranno le sottoclassi: Libro, Rivista, Ebook:
     public abstract String visualizzaDettagli();
 
+    // Override del metodo ereditato dalla superclasse generica Object:
     @Override
     public String toString() {
         return visualizzaDettagli();
