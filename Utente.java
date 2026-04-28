@@ -25,7 +25,7 @@ public class Utente {
     public void stampaPrestiti() {
         System.out.println("Prestiti di " + nome);
         for (Risorsa risorsa : prestiti) {
-            System.out.println(risorsa.visualizzaDettagli()); 
+            risorsa.visualizzaDettagli(); 
         }
     }
 }
