@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Bibiloteca {
+public class Bibiloteca{
     private String name;
     private ArrayList<Risorsa> risorse;
     private ArrayList<Utente> utenti;
@@ -19,6 +19,10 @@ public class Bibiloteca {
         utenti.add(u);
     }
 
+    public ArrayList<Risorsa> getRisorse() {
+        return risorse;
+    }
+
     public void stampaRisorse() {
         System.out.println("Risorse disponibili in " + name);
         for (Risorsa risorsa : risorse) {
@@ -27,11 +31,15 @@ public class Bibiloteca {
     }
 
     public void stampaRisorsa(String titolo) {
+        boolean exist = false;
         for (Risorsa risorsa : risorse) {
             if (risorsa.getTitolo().equalsIgnoreCase(titolo)) {
                 risorsa.visualizzaDettagli();
+                exist = true;
             }
         }
-        System.out.println("Risorsa non trovata");
+        if (!exist) {
+            System.out.println("Risorsa non trovata");
+        }
     }
 }

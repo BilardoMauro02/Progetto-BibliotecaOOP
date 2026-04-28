@@ -23,6 +23,13 @@ public abstract class Risorsa {
         return codice;
     }
 
+    public Risorsa prendiRisorsa(String titolo) {
+        if (this.titolo.equalsIgnoreCase(titolo)) {
+            return this;
+        }
+        return null;
+    }
+
     // Classe astratta che implementeranno le sottoclassi: Libro, Rivista, Ebook:
     public abstract void visualizzaDettagli();
 }

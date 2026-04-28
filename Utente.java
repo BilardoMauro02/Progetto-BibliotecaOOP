@@ -14,6 +14,20 @@ public class Utente {
         contatoreUtente++;
     }
 
+    public String getNome() {
+        return nome;
+    }
+
+    public Utente trovaUtente(String utente) {
+        if (this.nome.equalsIgnoreCase(utente)) {
+            System.out.println("Utente trovato: " + this.nome);
+            return this;
+        } else {
+            System.out.println("Utente non trovato");
+            return null;
+        }
+    }
+
     // Metodo prendi in prestito:
     public void prendiInPrestito(Risorsa r) {
         prestiti.add(r);
