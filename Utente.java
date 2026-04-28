@@ -2,14 +2,16 @@ import java.util.ArrayList;
 
 public class Utente {
     private String nome;
-    private String idUtente;
+    private int idUtente;
+    private static int contatoreUtente = 1;
     // Lista delle risorse prese in prestito:
     private ArrayList<Risorsa> prestiti = new ArrayList<>();
 
     // Costruttore:
-    public Utente(String nome, String idUtente) {
+    public Utente(String nome) {
         this.nome = nome;
-        this.idUtente = idUtente;
+        this.idUtente = contatoreUtente;
+        contatoreUtente++;
     }
 
     // Metodo prendi in prestito:
